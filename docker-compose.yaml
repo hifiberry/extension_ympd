@@ -3,10 +3,10 @@ services:
   ympd:
     container_name: ympd
     restart: always
-    #image: ghcr.io/hifiberry/extension_ympd:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/hifiberry/extension_ympd:latest
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
     devices:
       - /dev/snd:/dev/snd
     group_add:
